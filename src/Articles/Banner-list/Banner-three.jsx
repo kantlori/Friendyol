@@ -1,5 +1,5 @@
 import sahteBannerVeri from "../../FakeData/Banner-three";
-import MiddleBanner from "./MiddleBanner";
+import BannerCard from "./BannerCard";
 
 
 function BannerThree() {
@@ -7,7 +7,7 @@ function BannerThree() {
         <article className="middle-banner-three">
             <div className="middle-banners">
                 {sahteBannerVeri.map((item, index) => (
-                    <MiddleBanner key={index} item={item} />
+                    <BannerCard key={index} item={item} />
                 ))}
             </div>
         </article>

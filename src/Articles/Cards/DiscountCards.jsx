@@ -38,8 +38,8 @@ function DiscountCards() {
     return (
         <article className="component-item">
             <div className="card-header">
-                <h5>Fırsat Ürünleri</h5>
                 <p>{formatTime(counter)}</p>
+                <h5>Fırsat Ürünleri</h5>
             </div>
             <div className="widget-product">
                 {fakeDiscountProducts.map((item) => (
