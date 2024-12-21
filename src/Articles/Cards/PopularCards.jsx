@@ -1,13 +1,17 @@
-import sahteUrunVerisi from "../../FakeData/FakeProduct.js";
-import CardPopular from "./CardComponent.jsx";
+
+import sahteUrunVerisi from "../../FakeData/FakePopularProduct.js";
+import Card from "./Card.jsx";
 
 
 function PopularCards() {
     return (
         <article className="component-item">
+            <div className="card-header">
+                <h5>Popüler Ürünler</h5>
+            </div>
             <div className="widget-product">
                 {sahteUrunVerisi.map((item) => (
-                    <CardPopular key={item.id} item={item} />
+                    <Card key={item.id} item={item} />
                 ))}
             </div>
         </article>
