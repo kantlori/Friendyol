@@ -1,0 +1,123 @@
+/* Main header container */
+.header {
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 180px;
+    background-color: #f9f9f9;
+}
+
+/* Top right section with links */
+.top-right {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.top-right li {
+    margin-right: 30px;
+    list-style: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.top-right li:hover {
+    color: #28a745;
+    /* Green hover color */
+}
+
+/* Main header section with logo, search, and user icons */
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    width: 100%;
+}
+
+/* Search input and icon */
+.search {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search input {
+    width: 50vw;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    transition: border-color 0.2s ease;
+}
+
+.search input:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#logo {
+    margin-left: 50px;
+}
+
+/* User icons section */
+.for-user {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Bottom header section with categories */
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 30px;
+}
+
+/* Categories dropdown button */
+.all-categories {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.2s ease;
+}
+
+.all-categories:hover {
+    color: #28a745;
+}
+
+/* Categories list */
+.categories {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.categories li {
+    margin-left: 22px;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.categories li:hover {
+    color: #28a745;
+}
