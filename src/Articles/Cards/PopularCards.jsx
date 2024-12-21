@@ -1,7 +1,7 @@
 
 import sahteUrunVerisi from "../../FakeData/FakePopularProduct.js";
 import Card from "./Card.jsx";
-import "./PopularCards.css"
+import "./Card.css"
 
 
 function PopularCards() {
