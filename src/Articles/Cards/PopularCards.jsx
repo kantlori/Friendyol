@@ -1,11 +1,12 @@
 
 import sahteUrunVerisi from "../../FakeData/FakePopularProduct.js";
 import Card from "./Card.jsx";
+import "./PopularCards.css"
 
 
 function PopularCards() {
     return (
-        <article className="component-item">
+        <article className="popular-cards">
             <div className="card-header">
                 <h5>Popüler Ürünler</h5>
             </div>
