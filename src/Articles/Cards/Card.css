@@ -6,6 +6,8 @@
     -webkit-overflow-scrolling: touch;
     overflow-x: scroll;
     position: relative;
+    text-align: center;
+    /* scroll-behavior: smooth; */
 }
 
 .popular-cards {
@@ -56,6 +58,10 @@
     border-radius: 10px;
     background-color: #e68b0309;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* position: -webkit-sticky;
+    position: sticky;
+    left: 0; */
+
 }
 
 .card:hover {
