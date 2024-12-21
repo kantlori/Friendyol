@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import FriendyolLogo from "../assets/friend-yol-logo.svg"
 import "./Header.css"
+import HamburgerMenu from './Hamburger-menu.jsx';
+import HeaderCategory from './Categorry.jsx';
+import headerSahteVeri from '../FakeData/Header-categories.js';
 
 
-function HeaderTop() {
+function Header() {
     const [searchQuery, setSearchQuery] = useState("");
 
     // Arama butonuna tıklama işlemi
@@ -15,6 +18,7 @@ function HeaderTop() {
         }
     };
 
+    // Login Icon
     const LoginIcon = () => (
         <div style={{ display: 'flex', alignItems: 'center', fontSize: '16px', fontWeight: '500' }}>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -24,7 +28,7 @@ function HeaderTop() {
         </div>
     );
 
-
+    // Favori List Icon
     const FavoritesIcon = () => (
         <div style={{ display: 'flex', alignItems: 'center', fontSize: '16px', fontWeight: '500' }}>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -34,6 +38,7 @@ function HeaderTop() {
         </div>
     );
 
+    //User Login Icon
     const CartIcon = () => (
         <div style={{ display: 'flex', alignItems: 'center', fontSize: '16px', fontWeight: '500' }}>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -77,12 +82,22 @@ function HeaderTop() {
                     <LoginIcon />
                     <FavoritesIcon />
                     <CartIcon />
-
                 </div>
             </div>
-
+            <div className="header-bottom">
+                <div className="all-categories">
+                    <HamburgerMenu />
+                </div>
+                <div className="categories">
+                    <ul>
+                        {headerSahteVeri.map((item, index) => (
+                            <HeaderCategory key={index} item={item} />
+                        ))}
+                    </ul>
+                </div>
+            </div>
         </div>
     )
 }
 
-export default HeaderTop
+export default Header

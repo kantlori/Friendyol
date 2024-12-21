@@ -1,12 +1,19 @@
-import { useState } from 'react'
 import './App.css'
-import HeaderTop from './Header/Header-Top'
+import Header from './Header/Header'
+import ArticlesTop from './Articles/Articles-top'
+import BannerList from './Articles/Banner-list/Banner-list.jsx'
+import PopularCards from './Articles/PopularCard/PopularCards.jsx'
+import BannerThree from './Articles/Banner-list/Banner-three.jsx'
 
 function App() {
 
   return (
     <>
-      <HeaderTop />
+      <Header />
+      <ArticlesTop />
+      <BannerList />
+      <PopularCards />
+      <BannerThree />
     </>
   )
 }
