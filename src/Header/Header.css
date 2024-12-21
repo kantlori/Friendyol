@@ -34,7 +34,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 30px;
+    padding: 12px 30px;
     width: 100%;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .search input {
-    width: 50vw;
+    width: 40vw;
     height: 40px;
     padding: 0 20px;
     font-size: 14px;
@@ -75,8 +75,9 @@
 /* User icons section */
 .for-user {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     align-items: center;
+    margin-right: 70px;
 }
 
 /* Bottom header section with categories */
