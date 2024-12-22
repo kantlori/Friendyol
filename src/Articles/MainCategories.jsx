@@ -1,6 +1,6 @@
 import mainCategories from "../FakeData/MainCategories";
 import SuggestionCard from "./SuggestionCard";
-
+import "./MainCategories.css"
 
 function MainCategories() {
     return (

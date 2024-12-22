@@ -4,10 +4,10 @@
     gap: 1vw;
     padding-bottom: 1vw;
     -webkit-overflow-scrolling: touch;
-    overflow-x: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
     position: relative;
     text-align: center;
-    /* scroll-behavior: smooth; */
 }
 
 .popular-cards {
@@ -15,12 +15,63 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
     gap: 20px;
     background-color: #e68b0309;
 }
+
+.popular-cards-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.popular-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-500%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.popular-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popular-arrow.left {
+    left: 40px;
+}
+
+.popular-arrow.right {
+    right: 40px;
+}
+
+.widget-product::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.widget-product::-webkit-scrollbar-thumb {
+    background-color: #e68b0309;
+    border-radius: 10px;
+}
+
+.widget-product::-webkit-scrollbar-track {
+    background-color: #e68b0309;
+}
+
+.widget-product::-webkit-scrollbar-thumb:hover {
+    background-color: #e68b0309;
+}
+
 
 .widget-product::-webkit-scrollbar {
     width: 8px;
@@ -145,5 +196,5 @@
 
 .middle-banners img:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
